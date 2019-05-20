@@ -1,0 +1,10 @@
+C:\Users\Usuario\source\repos\AES.Dispatcher\AES.Domain\bin\Release\AES.Domain.dll
+C:\Users\Usuario\source\repos\AES.Dispatcher\AES.Domain\bin\Release\AES.Domain.pdb
+C:\Users\Usuario\source\repos\AES.Dispatcher\AES.Domain\bin\Release\Newtonsoft.Json.dll
+C:\Users\Usuario\source\repos\AES.Dispatcher\AES.Domain\bin\Release\System.ComponentModel.Annotations.dll
+C:\Users\Usuario\source\repos\AES.Dispatcher\AES.Domain\bin\Release\Newtonsoft.Json.xml
+C:\Users\Usuario\source\repos\AES.Dispatcher\AES.Domain\obj\Release\AES.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\source\repos\AES.Dispatcher\AES.Domain\obj\Release\AES.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\AES.Dispatcher\AES.Domain\obj\Release\AES.Domain.csproj.CopyComplete
+C:\Users\Usuario\source\repos\AES.Dispatcher\AES.Domain\obj\Release\AES.Domain.dll
+C:\Users\Usuario\source\repos\AES.Dispatcher\AES.Domain\obj\Release\AES.Domain.pdb

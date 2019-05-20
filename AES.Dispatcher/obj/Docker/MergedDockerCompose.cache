@@ -1,0 +1,13 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  aes.dispatcher:
+    build:
+      context: C:\Users\Usuario\source\repos\AES.Dispatcher\AES.Dispatcher
+      dockerfile: Dockerfile
+    image: aesdispatcher
+    ports:
+    - 80/tcp
+version: '3.0'

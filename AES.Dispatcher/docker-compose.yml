@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  aes.dispatcher:
+    image: aesdispatcher
+    build:
+      context: .\AES.Dispatcher
+      dockerfile: Dockerfile

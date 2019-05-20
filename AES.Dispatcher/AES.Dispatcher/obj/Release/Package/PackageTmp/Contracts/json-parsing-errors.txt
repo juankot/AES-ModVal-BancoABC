@@ -1,0 +1,9 @@
+-------domingo, 19 de mayo de 2019 10:31:58 a. m.-------
+pago: Could not parse JSON Schema. v3 parser message: Can not convert Array to Boolean.. v4 parser message: Could not resolve schema reference 'numeroReferencia.json'.
+
+-------domingo, 19 de mayo de 2019 11:12:23 a. m.-------
+pago: Could not parse JSON Schema. v3 parser message: Can not convert Array to Boolean.. v4 parser message: Could not resolve schema reference 'numeroReferencia.json'.
+
+-------domingo, 19 de mayo de 2019 11:13:10 a. m.-------
+pago: Could not parse JSON Schema. v3 parser message: Can not convert Array to Boolean.. v4 parser message: Could not resolve schema reference 'numeroReferencia.json'.
+
