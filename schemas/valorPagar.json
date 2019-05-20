@@ -1,0 +1,14 @@
+{
+  "$id": "https://example.com/result.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ValorPagar",
+  "required":["valorPagar"],
+  "type": "object",
+  "properties": {
+    "valorPagar": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Valor a pagar, pagado o a compensar."
+    }
+  }
+}

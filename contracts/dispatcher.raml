@@ -1,0 +1,68 @@
+#%RAML 1.0
+title: Dispatcher
+version: v1
+baseUri: http://localhost:8080/{version}
+types:
+  valorPagar:
+    type: !include ../schemas/valorPagar.json
+  resultado:
+    type: !include ../schemas/resultado.json
+  pago:
+    type: !include ../schemas/pago.json
+/dispatcher:
+  /consultar/{numeroReferencia}:
+      get:
+        description: Retorna el valor a pagar asociado a un número de referencia
+        responses:
+          200:
+            body:
+              application/json:
+                type: valorPagar
+              application/xml:
+                type: valorPagar
+          404:
+            body:
+              application/json:
+                type: resultado
+              application/xml:
+                type: resultado
+  /pagar:
+      post:
+        body:
+            application/json:
+              type: pago
+            application/xml:
+              type: pago
+        responses:
+          200:
+            body:
+              application/json:
+                type: resultado
+              application/xml:
+                type: resultado
+          404:
+            body:
+              application/json:
+                type: resultado
+              application/xml:
+                type: resultado
+  /compensar:
+      post:
+        body:
+            application/json:
+              type: pago
+            application/xml:
+              type: pago
+        responses:
+          200:
+            body:
+              application/json:
+                type: resultado
+              application/xml:
+                type: resultado
+          404:
+            body:
+              application/json:
+                type: resultado
+              application/xml:
+                type: resultado

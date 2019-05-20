@@ -1,0 +1,13 @@
+{
+  "$id": "https://example.com/result.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "NumeroReferencia",
+  "required":["numeroReferencia"],
+  "type": "object",
+  "properties": {
+    "numeroReferencia": {
+      "type": "string",
+      "description": "Número de referencia de la factura"
+    }
+  }
+}
