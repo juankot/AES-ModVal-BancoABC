@@ -1,0 +1,37 @@
+{
+  "$id": "https://example.com/result.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RoutingSchema",
+  "required":["Provider", "Identifier", "Type", "Endpoint", "Action", "XSLTRequest", "XSLTResponse"],
+  "type": "object",
+  "properties": {
+    "Provider": {
+      "type": "string",
+      "description": "Nombre del proveedor del convenio."
+    },
+    "Identifier": {
+      "type": "string",
+      "description": "Identificador del convenio (primeros 4 dígitos del número de referencia)."
+    },
+    "Type": {
+      "type": "string",
+      "enum": ["SOAP", "REST"]
+    },
+    "Endpoint": {
+      "type": "string",
+      "description": "URL del servicio Web proporcionado por el convenio."
+    },
+    "Action": {
+      "type": "string",
+      "description": "Método HTTP en caso de ser REST, o nombre de capacidad si es SOAP."
+    },
+    "XSLTRequest": {
+      "type": "string",
+      "description": "Transformación de Request."
+    },
+    "XSLTResponse": {
+      "type": "string",
+      "description": "Transformación de Response."
+    }
+  }
+}
