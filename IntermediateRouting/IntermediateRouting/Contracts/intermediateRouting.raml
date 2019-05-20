@@ -1,0 +1,23 @@
+#%RAML 1.0
+title: Intermediate Routing
+version: v1
+baseUri: http://localhost:8080/{version}
+types:
+  routing:
+    type: !include includes/routingSchema.json
+  resultado:
+    type: !include includes/resultado.json
+/route/{operation}/{numeroReferencia}:
+  get:
+    description: Retorna el la información de enrutamiento para una operación y número de referencia
+    responses:
+      200:
+        body:
+          application/json:
+            type: routing
+          application/xml:
+            type: routing
+      404:
+        body:
+          application/json:
+            type: resultado

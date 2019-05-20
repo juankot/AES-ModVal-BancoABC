@@ -1,0 +1,15 @@
+{
+  "$id": "https://example.com/result.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Pago",
+  "required":["numeroReferencia", "valor"],
+  "type": "object",
+  "properties": {
+    "numeroReferencia": {
+      "$ref": "numeroReferencia.json"
+    },
+    "valor": {
+      "$ref": "valorPagar.json"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+version: "3"
+services:
+  db:
+    image: mao9328/aes:dbconfigproviders
+    environment:
+      MYSQL_ROOT_PASSWORD: mypass
+      MYSQL_USER: service_user
+      MYSQL_PASSWORD: aes2018
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "0.1"
+          memory: 100M
+      restart_policy:
+        condition: on-failure    
+    ports: 
+      - "3306:3306"
+    networks:
+      - webnet
+  web:
+    depends_on:
+      - db
+    image: mao9328/aes:routingservice
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "0.1"
+          memory: 100M
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "9090:80"
+    networks:
+      - webnet  
+networks:
+  webnet:

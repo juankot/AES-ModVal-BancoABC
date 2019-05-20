@@ -1,0 +1,12 @@
+{
+  "$id": "http://calc-api.com/schemas/response.json",
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-08/schema",
+  "required": true,
+  "properties": {
+    "result": {
+      "type": "number",
+      "required": true
+    }
+  }
+}

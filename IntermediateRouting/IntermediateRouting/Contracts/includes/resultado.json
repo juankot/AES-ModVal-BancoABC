@@ -1,0 +1,13 @@
+{
+  "$id": "https://example.com/result.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Resultado",
+  "required":["descripcion"],
+  "type": "object",
+  "properties": {
+    "descripcion": {
+      "type": "string",
+      "description": "Descripción de la respuesta"
+    }
+  }
+}
