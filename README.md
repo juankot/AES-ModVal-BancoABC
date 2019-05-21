@@ -12,7 +12,7 @@ Dada las necesidades del Banco ABC, se requiere que la solución de arquitectura
 ![picture](SOA.png)
 
 ### Diagrama de Despliegue
-![picture](Despliegue.bmp)
+![picture](Despliegue.png)
 
 #### Contenedores
 Cada componente fue desplegado en contenedores (Docker) que permiten ser autocontenidos e independientes. Esto permite tener mayor control en aspectos como redundancia sobre las instancias y evolución independiente de las mismas.
